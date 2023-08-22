@@ -1,0 +1,39 @@
+header.header 
+    .header__container.container
+        a.header__logo(href="#")
+            img(src="./images/logo.png" alt="logo")
+        nav.header__nav 
+            ul.header__menu-list 
+                li.header__menu-item 
+                    a.header__menu-link(href="#") À la carte
+                li.header__menu-item 
+                    a.header__menu-link(href="#") Wijnkaart
+                li.header__menu-item 
+                    a.header__menu-link(href="#") Lunchmenu
+                li.header__menu-item 
+                    a.header__menu-link(href="#") Contact
+            .header__actions.header__actions_mobile
+                a.header__call-me(href="tel:+3292825725") +32 9 282 57 25
+        .header__actions.header__actions_desktop 
+            a.header__call-me(href="tel:+3292825725") +32 9 282 57 25
+        .header__burger 
+            span
+        .header__popup 
+            .header__popup-container
+                .header__popup-content 
+                    span.header__popup-close
+                    .header__popup-content-wrapper
+                        .header__popup-content-page.header__popup-content-page_one
+                            .header__popup-header 
+                                h3.header__popup-title #[span._aacent Зарезервировать] столик
+                                p.header__popup-subtitle Заполните форму и мы свяжемся с вами, чтобы обсудить детали
+                            .header__popup-body 
+                                form.header__popup-form(action="#" method="POST" name="reserve-table") 
+                                    input.header__popup-input(type="text" placeholder="Ваше имя" name="name")
+                                    input.header__popup-input.header__popup-input_required(type="tel" placeholder="Телефон*" name="phone")
+                                    button.header__popup-button.button(type="submit") Отправить
+                        .header__popup-content-page.header__popup-content-page_two
+                            .header__popup-header 
+                                h3.header__popup-title Ваше обращение#[br]#[span._aacent принято] 
+                                p.header__popup-subtitle Мы свяжемся с вами в ближайшее время, чтобы обсудить детали
+    .header__bg
